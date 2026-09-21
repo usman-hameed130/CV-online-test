@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usman Hameed – Ruby on Rails Developer</title>
+  <meta name="description" content="CV of Usman Hameed, Ruby on Rails developer and final-year Computer Science student at the University of Gujrat.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sheet">
+
+    <header class="masthead">
+      <h1>Usman Hameed</h1>
+      <p class="role">Ruby on Rails Developer</p>
+      <ul class="contact">
+        <li><a href="mailto:usmanhameedbhatti75@gmail.com">usmanhameedbhatti75@gmail.com</a></li>
+        <li><a href="tel:+923146993027">0314-6993027</a></li>
+        <li>University of Gujrat, Pakistan</li>
+      </ul>
+    </header>
+
+    <main>
+
+      <section class="block" aria-labelledby="summary-title">
+        <h2 id="summary-title">Professional summary</h2>
+        <div class="content">
+          <p>
+            Final-year Computer Science student and Ruby on Rails developer with hands-on
+            experience building role-based, multi-tenant web applications. Skilled in
+            implementing authorization systems with Pundit and CanCanCan, background job
+            processing with Sidekiq, and RESTful application design. Comfortable working
+            across the full stack, from database modeling to live-search UI features, with
+            a growing interest in blockchain-integrated systems.
+          </p>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical skills</h2>
+        <div class="content">
+          <dl class="skills">
+            <div>
+              <dt>Languages &amp; Frameworks</dt>
+              <dd>Ruby, Ruby on Rails, JavaScript, HTML5, CSS3</dd>
+            </div>
+            <div>
+              <dt>Authorization &amp; Access Control</dt>
+              <dd>Pundit, CanCanCan (roles, abilities, <code>accessible_by</code>, nested conditions)</dd>
+            </div>
+            <div>
+              <dt>Background Processing</dt>
+              <dd>Sidekiq (asynchronous email notifications)</dd>
+            </div>
+            <div>
+              <dt>Databases</dt>
+              <dd>PostgreSQL, MySQL, ActiveRecord (associations, nested attributes)</dd>
+            </div>
+            <div>
+              <dt>Other</dt>
+              <dd>RESTful API design, Git &amp; GitHub, live search implementation, file/image upload validation, blockchain fundamentals</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="content">
+
+          <article class="project">
+            <h3>Blockchain-Integrated Donation System</h3>
+            <p class="meta">Final Year Project – University of Gujrat</p>
+            <ul>
+              <li>Designing and developing a donation platform integrated with blockchain technology to improve transparency and traceability of donations, as part of the BS final year project.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>Bug Tracking System</h3>
+            <p class="meta">Ruby on Rails, Pundit/CanCanCan, Sidekiq</p>
+            <ul>
+              <li>Built a role-based bug tracking platform for Manager, Developer, and QA users with sign-up, login, and logout.</li>
+              <li>Modeled many-to-many relationships between users and projects using nested attributes, and one-to-many relationships between projects and bugs.</li>
+              <li>Implemented per-role authorization: managers create/edit/delete projects and manage team members; developers self-assign and resolve bugs; QA report bugs across all projects.</li>
+              <li>Added bug attributes including title, deadline, screenshot, type (feature/bug), and status, with conditional status options and project-wide unique titles.</li>
+              <li>Restricted screenshot uploads to .png/.gif formats and built a live-search project selector.</li>
+              <li>Integrated Sidekiq to send asynchronous email notifications for bug assignment and project updates.</li>
+              <li>Added search and filtering for bugs by project, status, and type.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>TeamHub – Multi-Tenant Project Management System</h3>
+            <p class="meta">Ruby on Rails, CanCanCan (learning project)</p>
+            <ul>
+              <li>Designed a multi-tenant Jira/Trello-style system covering Companies, Users, Projects, Tasks, Comments, and Documents to deeply exercise CanCanCan's authorization features.</li>
+              <li>Implemented tiered abilities for Guest, Member, Manager, and Admin roles, including simple, nested, and deeply nested hash conditions.</li>
+              <li>Used <code>accessible_by</code>, <code>load_and_authorize_resource</code>, and <code>authorize!</code> across controllers, with custom AccessDenied handling and internationalized error messages.</li>
+              <li>Combined role-specific ability classes with CanCanCan's merge functionality and wrote RSpec ability specs covering every role.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="content">
+          <article class="project">
+            <h3>Bachelor of Science (Computer Science)</h3>
+            <p class="meta">University of Gujrat (UOG)</p>
+            <p class="note">Final Year Project: Blockchain-Integrated Donation System</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
